@@ -11,9 +11,8 @@
 
 }
 
-body{
-    background-image: url(imagem/capa-series.webp); 
-    
+body{    
+    background-image: url(imagem/capa-serie.jpg);    
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
