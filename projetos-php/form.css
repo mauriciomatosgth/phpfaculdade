@@ -1,0 +1,64 @@
+#login{
+    padding: 10px 0;
+    width: 500px;   
+    height: 500px; 
+    margin: 150px auto ;
+    text-align: center;    
+    background-image:  linear-gradient( to right, rgba(255, 0, 0, 0.329), transparent, rgba(0, 0, 255, 0.226) );
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(213, 220, 223, 0.76);
+
+}
+
+body{
+    background-image: url(imagem/capa-series.webp); 
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+#div-form{
+    align-items: center;
+    margin: 75px auto;
+    width: 350px;
+}
+
+
+
+label{
+    width: 200px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius:10px;
+    text-align: center;
+    margin: 10px;
+}
+
+#titulo-form{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#botao:hover{
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#botao{
+    background-color:black;
+    color:red;
+    border: solid 1px gray;
+    font-weight: bolder;
+    font-size: 20px;
+}

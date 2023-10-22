@@ -24,7 +24,7 @@
             
             <div id="apresentacao">
                 
-                <p>Bem-vindo ao Top 1 Séries, o seu portal definitivo para explorar o emocionante universo das séries de TV. Navegue por uma pequena coleção de séries em nosso catálogo, desde os dramas mais intensos até as comédias mais hilariantes.</p>
+                <p>Bem-vindo ao Top 1 Séries, o seu portal definitivo para explorar o emocionante universo das séries de TV. Navegue por uma pequena coleção de séries em nosso catálogo, desde os dramas mais intensos até as comédias mais hilariantes. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consequuntur, vel, exercitationem tempore rem reiciendis asperiores modi pariatur iure dolorem, eligendi optio consequatur aspernatur corrupti numquam repudiandae assumenda? Pariatur, tenetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, odit? Provident hic dolore suscipit debitis at praesentium dolorum sunt officia, amet delectus voluptatibus veritatis nulla ea nostrum voluptate illum odit?</p>
 
                 
 
