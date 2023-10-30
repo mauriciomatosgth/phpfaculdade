@@ -6,7 +6,7 @@ $host = 'localhost';
 
 $mysqli = new mysqli($host,$usuario,$senha,$database);
 
-if ($mysqli_error){
-    die("Falha ao conectar ao banco de dados: ". $mysqli_error);
+if ($mysqli ->error){
+    die("Falha ao conectar ao banco de dados: ". $mysqli->error);
 }
 ?>

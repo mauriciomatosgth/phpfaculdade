@@ -22,42 +22,42 @@
         
         <div class="div-form">
         <?php
-include('cadastro.php');
+            include('cadastro.php');
 
-if(isset($_POST['l'])|| isset($_POST['s'])){
+            if(isset($_POST['l'])|| isset($_POST['s'])){
 
-    if(strlen($_POST['l']) == 0){
-        echo"Preencha seu e-mail";
-    }else if(strlen($_POST['s']) == 0){
-        echo"Preencha sua senha";
-    }else{
-        $email = $mysqli->real_escape_string($_POST['l']);
-        $senha = $mysqli->real_escape_string($_POST['s']);
+                if(strlen($_POST['l']) == 0){
+                    echo"Preencha seu e-mail";
+                }else if(strlen($_POST['s']) == 0){
+                    echo"Preencha sua senha";
+                }else{
+                    $email = $mysqli->real_escape_string($_POST['l']);
+                    $senha = $mysqli->real_escape_string($_POST['s']);
 
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+                    $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
-        $sql_query = $mysqli -> query($sql_code) or die("Falha na execução do código SQL". $mysqli->error);
+                    $sql_query = $mysqli -> query($sql_code) or die("Falha na execução do código SQL". $mysqli->error);
 
-        $quantidade = $sql_query->num_rows;
+                    $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1){
-            $usuario = $sql_query->fetch_assoc();
+                    if($quantidade == 1){
+                        $usuario = $sql_query->fetch_assoc();
 
-            if(!isset($_SESSION)){
-                session_start();
+                        if(!isset($_SESSION)){
+                            session_start();
+                        }
+                        $_SESSION['id'] = $usuario['id'];
+                        $_SESSION['nome'] = $usuario['nome'];
+                        header("Location: generos.php");
+
+
+            
+                    }else{
+                        echo"$sql_code";
+                        echo"Falha ao logar! Email ou senha incorretos";
+                    }
+                }
             }
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
-            header("Location: generos.php");
-
-
- 
-        }else{
-            echo"$sql_code";
-            echo"Falha ao logar! Email ou senha incorretos";
-        }
-    }
-}
       ?>      
         <form action="login.php" method="post">
             <h2 id="titulo-form">Login</h2>

@@ -12,7 +12,7 @@
 }
 
 body{    
-    background-image: url(imagem/capa-serie.jpg);    
+    background-image: url(../imagem/capa-serie);    
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
