@@ -11,8 +11,8 @@
         <nav>
             <img src="imagem/logo-netflix.png" alt="">
             <a href="#">Home</a>
-            <a href="login.html">Login</a>
-            <a href="#">Generos</a>
+            <a href="login.php">Login</a>
+            <a href="generos.php">Generos</a>
             <a href="#">Contato</a>
             <a href="#">Descrição</a>
 
