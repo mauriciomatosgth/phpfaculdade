@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 
 
@@ -33,10 +34,11 @@ nav a{
 
 
 
+
 main{    
     border-radius: 10px;
     padding: 0 15px 15px 15px;
-    width: 1000px;    
+    width: 800px;    
     margin: 10px auto;
     background-color: rgb(7, 7, 7);
     font-size: 20px;
@@ -53,4 +55,23 @@ h1 {
     background-color: black;
     color: white;
     padding: 5px 0;
+}
+
+#apresentacao p{
+    margin: 10px 0 ;
+    
+}
+.drama{
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.drama p {
+    margin-left: 10px;
+}
+
+.generos{
+    margin: 10px;
 }
