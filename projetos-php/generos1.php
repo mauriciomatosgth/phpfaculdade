@@ -86,14 +86,14 @@
                             
                             $_SESSION['id'] = $usuario['id'];
                             $_SESSION['serie'] = $usuario['nome'];
-                            $_SESSION['url'] = $usuario['url'];
-                            $_SESSION['sinopse'] = $usuario['sinopse'];
+                            $url = $usuario['url'];
+                            $sinopse = $usuario['sinopse'];
                             //header("Location: generos.php");
                             ?>
                             <div class="drama" id="break" >
 
-                                    <img src=<?php echo$_SESSION['url']; ?> class="imagem-sinopse" alt="">
-                                    <p ><?php echo$_SESSION['sinopse']; ?></p>
+                                    <img src=<?php echo $url; ?> class="imagem-sinopse" alt="">
+                                    <p ><?php echo $sinopse; ?></p>
                             </div>
 
                          <?php      
@@ -118,12 +118,13 @@
 
             <form action="generos1.php" method="post">
                 <select name="select">   
-                    <option value="acao">Acão</option>                 
+                    <option value="acao">Acão</option> 
                     <option value="drama">Drama</option>
                     <option value="comedia" >Comedia</option>
                     <option value="ficcao">Ficção</option>
+                    <option value="documentario">Documentario</option>
                 </select>
-                <input type="number" name="num" id="" max="10" min="1">
+                <input type="number" name="num" id="" max="10" min="1" required>
                 <input type="submit" value="Enviar">
             </form>
 
