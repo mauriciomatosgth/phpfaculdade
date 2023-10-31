@@ -1,3 +1,8 @@
+<?php
+                if(!isset($_SESSION)){
+                    session_start();
+                }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -10,9 +15,22 @@
         
         <nav>
             <img src="imagem/logo-netflix.png" alt="">
-            <a href="#">Home</a>
+            <a href="index.php">Home</a> 
+            <?php
+            if(!isset($_SESSION['id'])){
+
+                
+            ?>           
             <a href="login.php">Login</a>
+            <?php
+            }else{                
+            ?>
             <a href="generos.php">Generos</a>
+            <?php
+            }
+            ?>
+
+            
             <a href="#">Contato</a>
             <a href="#">Descrição</a>
 

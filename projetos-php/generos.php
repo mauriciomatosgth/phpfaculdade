@@ -1,35 +1,61 @@
 <?php
-include('seguranca.php');
-if(!isset($_SESSION)){
-    session_start();
-}
+    if(!isset($_SESSION)){
+        session_start();
+    }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
+
 <body>
-<nav>
-        <img src="imagem/logo-netflix.png" alt="">
-        <a href="index.php">Home</a>
-        <a href="login.php">Login</a>
-        <a href="generos.php">Generos</a>
-        <a href="#">Contato</a>
-        <a href="#">Descrição</a>
 
-    </nav>
 
-    <main>
+    
+        <nav>
+            <img src="imagem/logo-netflix.png" alt="">
+            <a href="index.php">Home</a> 
+            <?php
+            if(!isset($_SESSION['id'])){
+
+            
+            ?>           
+            <a href="login.php">Login</a>
+            <?php
+            }else{
+            ?>
+            <a href="generos.php">Generos</a>
+            <?php
+            }
+            ?>
+
+            
+            <a href="#">Contato</a>
+            <a href="#">Descrição</a>
+
+        </nav>
+
+        <main>
+            <?php
+               
+                
+                if(!isset($_SESSION['id'])){
+                
+                    die("Você não pode acessar esta pagina porque não esta logado.<p> <a href=\"login.php\">Login</a></p>");
+                
+                }
+             ?>
+
             <h1>Ranking de melhores séries por gênero.</h1>
 
 
             <div class="generos" id="apresentacao">
+
                 
                     <p>Bem-vindo à nossa plataforma de entretenimento! Esta página é dedicada a apresentar as principais séries de TV, especialmente selecionadas com base no gênero que você escolher. Aqui, você encontrará uma seleção cuidadosamente curada das séries mais populares e emocionantes, todas dentro do seu gênero de preferência.</p>
                 
